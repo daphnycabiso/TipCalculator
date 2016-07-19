@@ -17,7 +17,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="46dp"
-        android:numeric="integer|decimal"
+        android:numeric="signed|integer|decimal"
         android:hint="Bill" />
 
     <EditText
@@ -28,7 +28,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="46dp"
-        android:numeric="integer|decimal"
+        android:numeric="signed|integer|decimal"
         android:hint="Number of People" />
 
     <SeekBar
