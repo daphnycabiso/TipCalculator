@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.tipcalculator.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_value"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:numeric="integer|decimal"
+        android:hint="Bill" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberOfPeople"
+        android:layout_below="@+id/bill_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:numeric="integer|decimal"
+        android:hint="Number of People" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipPercentage"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Per Person:"
+        android:id="@+id/total_tip_result"
+        android:layout_below="@+id/tipPercentage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Per Person: "
+        android:id="@+id/total_to_pay_result"
+        android:layout_below="@+id/total_tip_result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/tipResult"
+        android:layout_alignTop="@+id/total_tip_result"
+        android:layout_alignRight="@+id/tipPercentage"
+        android:layout_alignEnd="@+id/tipPercentage"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/toPayResult"
+        android:layout_alignBottom="@+id/total_to_pay_result"
+        android:layout_alignLeft="@+id/tipResult"
+        android:layout_alignStart="@+id/tipResult"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percentLabel"
+        android:layout_below="@+id/tipPercentage"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
